@@ -1,0 +1,67 @@
+﻿PVObject_=pvGInverter
+  Comment=Growatt New Energy	MAC 60KTL3-X LV	Manufacturer
+  Version=6.81
+  Flags=$00010571
+
+  PVObject_Commercial=pvCommercial
+    Flags=$0041
+    Manufacturer=Growatt New Energy
+    Model=MAC 60KTL3-X LV
+    DataSource=Manufacturer
+    NPieces=100
+    PriceDate=24/06/20 14:53
+  End of PVObject pvCommercial
+
+  Converter=TConverter
+    PNomConv=60.000
+    PMaxOUT=60.000
+    VOutConv=400.0
+    VMppMin=200
+    VMPPMax=1000
+    VmppNom=600.0
+    VAbsMax=1100
+    PSeuil=60.0
+    EfficMax=98.80
+    EfficEuro=98.50
+    FResNorm=3.00
+    ModeOper=MPPT
+    CompPMax=Lim
+    CompVMax=Lim
+    MonoTri=Tri
+    ModeAffEnum=Efficf_PIn
+    UnitAffEnum=kW
+    PNomDC=60.000
+    PMaxDC=90.000
+    IDCMax=0.0
+    IMaxAC=96.6
+    TPNom=50.0
+    TPMax=25.0
+    TPLim1=60.0
+    PInEffMax =1800.000
+    PThreshEff=6.8
+    HasdefaultPThresh=False
+
+    ProfilPIO=TCubicProfile
+      NPtsMax=11
+      NPtsEff=8
+      LastCompile=$008D
+      Mode=1
+      Point_1=60,0
+      Point_2=672,619
+      Point_3=1895,1803
+      Point_4=4953,4822
+      Point_5=11069,10893
+      Point_6=17186,16961
+      Point_7=35535,35108
+      Point_8=60000,59155
+      Point_9=0,0
+      Point_10=0,0
+      Point_11=0,0
+    End of TCubicProfile
+  End of TConverter
+  NbInputs=4
+  NbMPPT=3
+  NbMSInterne=2
+  MasterSlave=No_M_S
+  MS_Thresh=0.8
+End of PVObject pvGInverter

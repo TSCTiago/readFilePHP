@@ -1,0 +1,68 @@
+﻿PVObject_=pvGInverter
+  Comment=Growatt New Energy	8000MTL-S	Manufacturer
+  Version=6.81
+  Flags=$00010571
+
+  PVObject_Commercial=pvCommercial
+    Flags=$0041
+    Manufacturer=Growatt New Energy
+    Model=8000MTL-S
+    DataSource=Manufacturer
+    NPieces=100
+    PriceDate=24/06/20 15:13
+  End of PVObject pvCommercial
+  Transfo=Without
+
+  Converter=TConverter
+    PNomConv=8.000
+    PMaxOUT=8.000
+    VOutConv=230.0
+    VMppMin=80
+    VMPPMax=550
+    VmppNom=360.0
+    VAbsMax=550
+    PSeuil=60.0
+    EfficMax=98.40
+    EfficEuro=97.90
+    FResNorm=3.00
+    ModeOper=MPPT
+    CompPMax=Lim
+    CompVMax=Lim
+    MonoTri=Mono
+    ModeAffEnum=Efficf_PIn
+    UnitAffEnum=kW
+    PNomDC=8.000
+    PMaxDC=10.500
+    IDCMax=0.0
+    IMaxAC=35.7
+    TPNom=50.0
+    TPMax=25.0
+    TPLim1=60.0
+    PInEffMax =4800.000
+    PThreshEff=30.8
+    HasdefaultPThresh=False
+
+    ProfilPIO=TCubicProfile
+      NPtsMax=11
+      NPtsEff=8
+      LastCompile=$008D
+      Mode=1
+      Point_1=60,0
+      Point_2=240,209
+      Point_3=400,369
+      Point_4=800,768
+      Point_5=1600,1563
+      Point_6=2400,2357
+      Point_7=4800,4723
+      Point_8=8000,7845
+      Point_9=0,0
+      Point_10=0,0
+      Point_11=0,0
+    End of TCubicProfile
+  End of TConverter
+  NbInputs=3
+  NbMPPT=2
+  NbMSInterne=2
+  MasterSlave=No_M_S
+  MS_Thresh=0.8
+End of PVObject pvGInverter
